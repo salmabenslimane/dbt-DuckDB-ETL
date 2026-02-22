@@ -1,0 +1,261 @@
+[0m22:21:04.575907 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028FC8218D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028FC8218750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028FC8218B90>]}
+
+
+============================== 22:21:04.626604 | 3af702a2-e6b3-48dd-87af-9c198a61364e ==============================
+[0m22:21:04.626604 [info ] [MainThread]: Running with dbt=1.11.6
+[0m22:21:04.626604 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\User\\Desktop\\dbt-DuckDB-ETL', 'indirect_selection': 'eager', 'invocation_command': 'dbt init app_market_research', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\User\\Desktop\\dbt-DuckDB-ETL\\logs'}
+[0m22:21:05.307287 [info ] [MainThread]: Setting up your profile.
+[0m22:21:05.325584 [debug] [MainThread]: Command `dbt init` succeeded at 22:21:05.325584 after 1.00 seconds
+[0m22:21:05.325584 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028FC2122790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028FC1F24F50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028FC1F24BD0>]}
+[0m22:21:05.325584 [debug] [MainThread]: Flushing usage events
+[0m22:21:07.060698 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:21:48.717432 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB71C18F50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB71C186D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB71C187D0>]}
+
+
+============================== 22:21:48.736815 | 6663112f-3239-47c2-9f2c-c86072599b29 ==============================
+[0m22:21:48.736815 [info ] [MainThread]: Running with dbt=1.11.6
+[0m22:21:48.741045 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\User\\Desktop\\dbt-DuckDB-ETL', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt debug', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\User\\Desktop\\dbt-DuckDB-ETL\\logs'}
+[0m22:21:48.854344 [info ] [MainThread]: dbt version: 1.11.6
+[0m22:21:48.859429 [info ] [MainThread]: python version: 3.11.9
+[0m22:21:48.861772 [info ] [MainThread]: python path: C:\Users\User\Desktop\dbt-DuckDB-ETL\venv\scripts\python.exe
+[0m22:21:48.861772 [info ] [MainThread]: os info: Windows-10-10.0.26200-SP0
+[0m22:21:50.288874 [info ] [MainThread]: Using profiles dir at C:\Users\User\Desktop\dbt-DuckDB-ETL
+[0m22:21:50.292068 [info ] [MainThread]: Using profiles.yml file at C:\Users\User\Desktop\dbt-DuckDB-ETL\profiles.yml
+[0m22:21:50.296991 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\User\Desktop\dbt-DuckDB-ETL\dbt_project.yml
+[0m22:21:50.449870 [info ] [MainThread]: adapter type: duckdb
+[0m22:21:50.458179 [info ] [MainThread]: adapter version: 1.10.1
+[0m22:21:50.962945 [info ] [MainThread]: Configuration:
+[0m22:21:50.966330 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m22:21:50.968936 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m22:21:50.972210 [info ] [MainThread]: Required dependencies:
+[0m22:21:50.974537 [debug] [MainThread]: Executing "git --help"
+[0m22:21:51.137136 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m22:21:51.140238 [debug] [MainThread]: STDERR: "b''"
+[0m22:21:51.140238 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m22:21:51.150914 [info ] [MainThread]: Connection:
+[0m22:21:51.153497 [info ] [MainThread]:   database: app_market
+[0m22:21:51.157862 [info ] [MainThread]:   schema: main
+[0m22:21:51.157862 [info ] [MainThread]:   path: data/db/app_market.duckdb
+[0m22:21:51.165100 [info ] [MainThread]:   config_options: None
+[0m22:21:51.168901 [info ] [MainThread]:   extensions: None
+[0m22:21:51.173538 [info ] [MainThread]:   settings: {}
+[0m22:21:51.173538 [info ] [MainThread]:   external_root: .
+[0m22:21:51.181621 [info ] [MainThread]:   use_credential_provider: None
+[0m22:21:51.188296 [info ] [MainThread]:   attach: None
+[0m22:21:51.190043 [info ] [MainThread]:   filesystems: None
+[0m22:21:51.190043 [info ] [MainThread]:   remote: None
+[0m22:21:51.204537 [info ] [MainThread]:   plugins: None
+[0m22:21:51.208634 [info ] [MainThread]:   disable_transactions: False
+[0m22:21:51.215071 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m22:21:52.947750 [debug] [MainThread]: Acquiring new duckdb connection 'debug'
+[0m22:21:53.580343 [debug] [MainThread]: Using duckdb connection "debug"
+[0m22:21:53.585312 [debug] [MainThread]: On debug: select 1 as id
+[0m22:21:53.585788 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:21:53.685392 [debug] [MainThread]: DuckDB adapter: duckdb error: IO Error: Cannot open file "c:\users\user\desktop\dbt-duckdb-etl\data\db\app_market.duckdb": Le chemin d’accès spécifié est introuvable.
+
+[0m22:21:53.688698 [debug] [MainThread]: DuckDB adapter: Error running SQL: select 1 as id
+[0m22:21:53.688698 [debug] [MainThread]: DuckDB adapter: Rolling back transaction.
+[0m22:21:53.696857 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:21:53.718141 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m22:21:53.720314 [info ] [MainThread]: [31m1 check failed:[0m
+[0m22:21:53.721904 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >IO Error: Cannot open file "c:\users\user\desktop\dbt-duckdb-etl\data\db\app_market.duckdb": Le chemin d’accès spécifié est introuvable.
+
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m22:21:53.727589 [debug] [MainThread]: Command `dbt debug` failed at 22:21:53.727589 after 5.31 seconds
+[0m22:21:53.730016 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m22:21:53.730016 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB6B9B4B50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB6B9B4A90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB71E86A90>]}
+[0m22:21:53.738121 [debug] [MainThread]: Flushing usage events
+[0m22:21:55.369371 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:22:41.251727 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EAAD41A050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EAAD477F90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EAAD477250>]}
+
+
+============================== 22:22:41.267627 | 921ef407-9acc-4c0c-b54c-714622e93693 ==============================
+[0m22:22:41.267627 [info ] [MainThread]: Running with dbt=1.11.6
+[0m22:22:41.270146 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\User\\Desktop\\dbt-DuckDB-ETL', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt run --select stg_connection_check', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\User\\Desktop\\dbt-DuckDB-ETL\\logs'}
+[0m22:22:42.340426 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '921ef407-9acc-4c0c-b54c-714622e93693', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EAAD688BD0>]}
+[0m22:22:42.593735 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '921ef407-9acc-4c0c-b54c-714622e93693', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EAAB5DF950>]}
+[0m22:22:42.601301 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m22:22:43.987917 [debug] [MainThread]: checksum: ec27062d18352e9cfca161c166fcc73d2201661a23a3cf3c89196a27f32cfcb8, vars: {}, profile: , target: , version: 1.11.6
+[0m22:22:43.987917 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m22:22:43.994209 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '921ef407-9acc-4c0c-b54c-714622e93693', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EAAD7366D0>]}
+[0m22:22:51.304627 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'dim_developers' in the 'models' section of file 'models\marts\dimensions\schema_dimensions.yml'
+[0m22:22:51.306909 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'dim_categories' in the 'models' section of file 'models\marts\dimensions\schema_dimensions.yml'
+[0m22:22:51.318842 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'dim_apps' in the 'models' section of file 'models\marts\dimensions\schema_dimensions.yml'
+[0m22:22:51.323379 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'dim_date' in the 'models' section of file 'models\marts\dimensions\schema_dimensions.yml'
+[0m22:22:51.331767 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'dim_apps_scd' in the 'models' section of file 'models\marts\dimensions\schema_dimensions.yml'
+[0m22:22:51.651906 [warn ] [MainThread]: [[33mWARNING[0m][MissingArgumentsPropertyInGenericTestDeprecation]: Deprecated
+functionality
+Found top-level arguments to test `relationships` defined on 'dim_apps' in
+package 'app_market_research' (models\marts\dimensions\schema_dimensions.yml).
+Arguments to generic tests should be nested under the `arguments` property.
+[0m22:22:51.654803 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '921ef407-9acc-4c0c-b54c-714622e93693', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EAADC88B50>]}
+[0m22:22:51.743447 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'fact_reviews' in the 'models' section of file 'models\marts\facts\schema_facts.yml'
+[0m22:22:51.942951 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.app_market_research.dim_apps (1)' (models\marts\dimensions\dim_apps (1).sql) depends on a node named 'dim_categories' which was not found
+[0m22:22:51.945281 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- MissingArgumentsPropertyInGenericTestDeprecation: 11 occurrences
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m22:22:51.946809 [debug] [MainThread]: Command `dbt run` failed at 22:22:51.946809 after 10.97 seconds
+[0m22:22:51.946809 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EAAD413B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EAADED28D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EAA7332E10>]}
+[0m22:22:51.949975 [debug] [MainThread]: Flushing usage events
+[0m22:22:53.441100 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:23:33.551478 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EB12E71DD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EB12EA9850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EB12EA9710>]}
+
+
+============================== 22:23:33.569029 | 14e7104f-2c18-4b6c-a29a-dde3f652a3c8 ==============================
+[0m22:23:33.569029 [info ] [MainThread]: Running with dbt=1.11.6
+[0m22:23:33.573497 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\User\\Desktop\\dbt-DuckDB-ETL', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt run', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\User\\Desktop\\dbt-DuckDB-ETL\\logs'}
+[0m22:23:34.494795 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '14e7104f-2c18-4b6c-a29a-dde3f652a3c8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EB12878610>]}
+[0m22:23:34.682677 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '14e7104f-2c18-4b6c-a29a-dde3f652a3c8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EB0EA54CD0>]}
+[0m22:23:34.692743 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m22:23:35.841695 [debug] [MainThread]: checksum: ec27062d18352e9cfca161c166fcc73d2201661a23a3cf3c89196a27f32cfcb8, vars: {}, profile: , target: , version: 1.11.6
+[0m22:23:35.847768 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m22:23:35.850510 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '14e7104f-2c18-4b6c-a29a-dde3f652a3c8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EB12ED6B50>]}
+[0m22:23:40.948582 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'dim_developers' in the 'models' section of file 'models\marts\dimensions\schema_dimensions.yml'
+[0m22:23:40.951912 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'dim_categories' in the 'models' section of file 'models\marts\dimensions\schema_dimensions.yml'
+[0m22:23:40.960959 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'dim_apps' in the 'models' section of file 'models\marts\dimensions\schema_dimensions.yml'
+[0m22:23:40.968811 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'dim_date' in the 'models' section of file 'models\marts\dimensions\schema_dimensions.yml'
+[0m22:23:40.976873 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'dim_apps_scd' in the 'models' section of file 'models\marts\dimensions\schema_dimensions.yml'
+[0m22:23:41.317488 [warn ] [MainThread]: [[33mWARNING[0m][MissingArgumentsPropertyInGenericTestDeprecation]: Deprecated
+functionality
+Found top-level arguments to test `relationships` defined on 'dim_apps' in
+package 'app_market_research' (models\marts\dimensions\schema_dimensions.yml).
+Arguments to generic tests should be nested under the `arguments` property.
+[0m22:23:41.320420 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '14e7104f-2c18-4b6c-a29a-dde3f652a3c8', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EB149DC250>]}
+[0m22:23:41.486733 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'fact_reviews' in the 'models' section of file 'models\marts\facts\schema_facts.yml'
+[0m22:23:41.650824 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.app_market_research.dim_apps (1)' (models\marts\dimensions\dim_apps (1).sql) depends on a node named 'dim_categories' which was not found
+[0m22:23:41.666687 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- MissingArgumentsPropertyInGenericTestDeprecation: 11 occurrences
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m22:23:41.670154 [debug] [MainThread]: Command `dbt run` failed at 22:23:41.666687 after 8.47 seconds
+[0m22:23:41.670154 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EB12ED6D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EB12ED7590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EB14672990>]}
+[0m22:23:41.672166 [debug] [MainThread]: Flushing usage events
+[0m22:23:42.877248 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:26:00.475778 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FDC8818ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FDC8873590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FDC88726D0>]}
+
+
+============================== 22:26:00.492995 | 5c683b23-92ce-4e3a-9912-33f5c0dfd109 ==============================
+[0m22:26:00.492995 [info ] [MainThread]: Running with dbt=1.11.6
+[0m22:26:00.496649 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\User\\Desktop\\dbt-DuckDB-ETL', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt debug', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\User\\Desktop\\dbt-DuckDB-ETL\\logs'}
+[0m22:26:00.544877 [info ] [MainThread]: dbt version: 1.11.6
+[0m22:26:00.545478 [info ] [MainThread]: python version: 3.11.9
+[0m22:26:00.548145 [info ] [MainThread]: python path: C:\Users\User\Desktop\dbt-DuckDB-ETL\venv\scripts\python.exe
+[0m22:26:00.548145 [info ] [MainThread]: os info: Windows-10-10.0.26200-SP0
+[0m22:26:00.902480 [info ] [MainThread]: Using profiles dir at C:\Users\User\Desktop\dbt-DuckDB-ETL
+[0m22:26:00.904902 [info ] [MainThread]: Using profiles.yml file at C:\Users\User\Desktop\dbt-DuckDB-ETL\profiles.yml
+[0m22:26:00.904902 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\User\Desktop\dbt-DuckDB-ETL\dbt_project.yml
+[0m22:26:00.912519 [info ] [MainThread]: adapter type: duckdb
+[0m22:26:00.912519 [info ] [MainThread]: adapter version: 1.10.1
+[0m22:26:01.260974 [info ] [MainThread]: Configuration:
+[0m22:26:01.283687 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m22:26:01.283687 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m22:26:01.285701 [info ] [MainThread]: Required dependencies:
+[0m22:26:01.288534 [debug] [MainThread]: Executing "git --help"
+[0m22:26:01.397533 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m22:26:01.397533 [debug] [MainThread]: STDERR: "b''"
+[0m22:26:01.397533 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m22:26:01.397533 [info ] [MainThread]: Connection:
+[0m22:26:01.397533 [info ] [MainThread]:   database: app_market
+[0m22:26:01.397533 [info ] [MainThread]:   schema: main
+[0m22:26:01.397533 [info ] [MainThread]:   path: data/db/app_market.duckdb
+[0m22:26:01.406576 [info ] [MainThread]:   config_options: None
+[0m22:26:01.408759 [info ] [MainThread]:   extensions: None
+[0m22:26:01.408759 [info ] [MainThread]:   settings: {}
+[0m22:26:01.411776 [info ] [MainThread]:   external_root: .
+[0m22:26:01.413656 [info ] [MainThread]:   use_credential_provider: None
+[0m22:26:01.414200 [info ] [MainThread]:   attach: None
+[0m22:26:01.416216 [info ] [MainThread]:   filesystems: None
+[0m22:26:01.417484 [info ] [MainThread]:   remote: None
+[0m22:26:01.419362 [info ] [MainThread]:   plugins: None
+[0m22:26:01.419714 [info ] [MainThread]:   disable_transactions: False
+[0m22:26:01.419714 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m22:26:02.365146 [debug] [MainThread]: Acquiring new duckdb connection 'debug'
+[0m22:26:02.485574 [debug] [MainThread]: Using duckdb connection "debug"
+[0m22:26:02.487584 [debug] [MainThread]: On debug: select 1 as id
+[0m22:26:02.487584 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:26:02.525349 [debug] [MainThread]: SQL status: OK in 0.037 seconds
+[0m22:26:02.527360 [debug] [MainThread]: On debug: Close
+[0m22:26:02.529115 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m22:26:02.529115 [info ] [MainThread]: [32mAll checks passed![0m
+[0m22:26:02.534439 [debug] [MainThread]: Command `dbt debug` succeeded at 22:26:02.532299 after 2.29 seconds
+[0m22:26:02.534439 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m22:26:02.536452 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FDC8879690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FDC8844DD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FDC2772DD0>]}
+[0m22:26:02.536452 [debug] [MainThread]: Flushing usage events
+[0m22:26:04.046486 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:26:11.847714 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002097161B710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020971619790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002097161BD90>]}
+
+
+============================== 22:26:11.847714 | a6db6bbd-3dd2-465d-afc8-5e9e1e258025 ==============================
+[0m22:26:11.847714 [info ] [MainThread]: Running with dbt=1.11.6
+[0m22:26:11.847714 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\User\\Desktop\\dbt-DuckDB-ETL', 'use_colors': 'True', 'invocation_command': 'dbt run --select stg_connection_check', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\User\\Desktop\\dbt-DuckDB-ETL\\logs'}
+[0m22:26:12.393456 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a6db6bbd-3dd2-465d-afc8-5e9e1e258025', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002096D5561D0>]}
+[0m22:26:12.503390 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'a6db6bbd-3dd2-465d-afc8-5e9e1e258025', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002097167AF90>]}
+[0m22:26:12.503390 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m22:26:13.116863 [debug] [MainThread]: checksum: ec27062d18352e9cfca161c166fcc73d2201661a23a3cf3c89196a27f32cfcb8, vars: {}, profile: , target: , version: 1.11.6
+[0m22:26:13.121444 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m22:26:13.121444 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'a6db6bbd-3dd2-465d-afc8-5e9e1e258025', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020971A92650>]}
+[0m22:26:16.432751 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'dim_apps_scd' in the 'models' section of file 'models\marts\dimensions\schema_dimensions.yml'
+[0m22:26:16.743571 [warn ] [MainThread]: [[33mWARNING[0m][MissingArgumentsPropertyInGenericTestDeprecation]: Deprecated
+functionality
+Found top-level arguments to test `relationships` defined on 'dim_apps' in
+package 'app_market_research' (models\marts\dimensions\schema_dimensions.yml).
+Arguments to generic tests should be nested under the `arguments` property.
+[0m22:26:16.743571 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'a6db6bbd-3dd2-465d-afc8-5e9e1e258025', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020971C9FB90>]}
+[0m22:26:16.860134 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'fact_reviews' in the 'models' section of file 'models\marts\facts\schema_facts.yml'
+[0m22:26:17.094665 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.app_market_research.not_null_dim_apps_scd_app_version_sk.4930138f40' (models\marts\dimensions\schema_dimensions.yml) depends on a node named 'dim_apps_scd' in package '' which was not found
+[0m22:26:17.098692 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.app_market_research.unique_dim_apps_scd_app_version_sk.d8e8d757be' (models\marts\dimensions\schema_dimensions.yml) depends on a node named 'dim_apps_scd' in package '' which was not found
+[0m22:26:17.100708 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.app_market_research.not_null_dim_apps_scd_app_id.45dcea9e16' (models\marts\dimensions\schema_dimensions.yml) depends on a node named 'dim_apps_scd' in package '' which was not found
+[0m22:26:17.102719 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.app_market_research.not_null_dim_apps_scd_valid_from.a947ddbd86' (models\marts\dimensions\schema_dimensions.yml) depends on a node named 'dim_apps_scd' in package '' which was not found
+[0m22:26:17.104733 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.app_market_research.not_null_dim_apps_scd_is_current.c51a653ed0' (models\marts\dimensions\schema_dimensions.yml) depends on a node named 'dim_apps_scd' in package '' which was not found
+[0m22:26:17.106750 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.app_market_research.not_null_fact_reviews_review_sk.e6307dc87e' (models\marts\facts\schema_facts.yml) depends on a node named 'fact_reviews' in package '' which was not found
+[0m22:26:17.108762 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.app_market_research.unique_fact_reviews_review_sk.67acad5125' (models\marts\facts\schema_facts.yml) depends on a node named 'fact_reviews' in package '' which was not found
+[0m22:26:17.111500 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.app_market_research.not_null_fact_reviews_app_sk.ed3df3ff4b' (models\marts\facts\schema_facts.yml) depends on a node named 'fact_reviews' in package '' which was not found
+[0m22:26:17.113052 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.app_market_research.relationships_fact_reviews_app_sk__app_sk__ref_dim_apps_.2b22af5c68' (models\marts\facts\schema_facts.yml) depends on a node named 'fact_reviews' in package '' which was not found
+[0m22:26:17.116206 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.app_market_research.not_null_fact_reviews_developer_sk.42758c2b07' (models\marts\facts\schema_facts.yml) depends on a node named 'fact_reviews' in package '' which was not found
+[0m22:26:17.117399 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.app_market_research.relationships_fact_reviews_developer_sk__developer_sk__ref_dim_developers_.3fb7c8a598' (models\marts\facts\schema_facts.yml) depends on a node named 'fact_reviews' in package '' which was not found
+[0m22:26:17.118462 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.app_market_research.not_null_fact_reviews_category_sk.869f824ec5' (models\marts\facts\schema_facts.yml) depends on a node named 'fact_reviews' in package '' which was not found
+[0m22:26:17.121480 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.app_market_research.relationships_fact_reviews_category_sk__category_sk__ref_dim_categories_.4baf0c5893' (models\marts\facts\schema_facts.yml) depends on a node named 'fact_reviews' in package '' which was not found
+[0m22:26:17.121480 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.app_market_research.not_null_fact_reviews_date_key.0ed7f1e8a3' (models\marts\facts\schema_facts.yml) depends on a node named 'fact_reviews' in package '' which was not found
+[0m22:26:17.121480 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.app_market_research.relationships_fact_reviews_date_key__date_key__ref_dim_date_.b3eff6dbab' (models\marts\facts\schema_facts.yml) depends on a node named 'fact_reviews' in package '' which was not found
+[0m22:26:17.121480 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.app_market_research.not_null_fact_reviews_score.4c6f2199f3' (models\marts\facts\schema_facts.yml) depends on a node named 'fact_reviews' in package '' which was not found
+[0m22:26:17.128985 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.app_market_research.accepted_values_fact_reviews_score__1__2__3__4__5.c565d39614' (models\marts\facts\schema_facts.yml) depends on a node named 'fact_reviews' in package '' which was not found
+[0m22:26:17.131000 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.app_market_research.not_null_fact_reviews_thumbs_up_count.26d126971b' (models\marts\facts\schema_facts.yml) depends on a node named 'fact_reviews' in package '' which was not found
+[0m22:26:17.133012 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.app_market_research.dbt_utils_accepted_range_fact_reviews_thumbs_up_count__0.f3434d8b57' (models\marts\facts\schema_facts.yml) depends on a node named 'fact_reviews' in package '' which was not found
+[0m22:26:17.342465 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Resource names cannot contain spaces:
+    * 'model.app_market_research.fact_reviews (1)' (models\marts\facts\fact_reviews (1).sql)
+  Please rename the invalid model(s) so that their name(s) do not contain any spaces.
+[0m22:26:17.346094 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- MissingArgumentsPropertyInGenericTestDeprecation: 11 occurrences
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m22:26:17.349337 [debug] [MainThread]: Command `dbt run` failed at 22:26:17.349337 after 5.65 seconds
+[0m22:26:17.350758 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002096B6E2810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020971613C50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020971F043D0>]}
+[0m22:26:17.352664 [debug] [MainThread]: Flushing usage events
+[0m22:26:18.710669 [debug] [MainThread]: An error was encountered while trying to flush usage events
