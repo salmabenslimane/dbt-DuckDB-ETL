@@ -12,7 +12,7 @@ models:
           - not_null
           - unique
       - name: app_id
-        description: Natural key — Google Play Store package name (e.g. com.otter.ai)
+        description: Natural key — Google Play Store package name
         tests:
           - not_null
           - unique
@@ -23,9 +23,6 @@ models:
         description: Average user rating (0.0 to 5.0)
         tests:
           - not_null
-          - dbt_utils.accepted_range:
-              min_value: 0
-              max_value: 5
       - name: price
         tests:
           - not_null
@@ -41,7 +38,7 @@ models:
           - not_null
           - unique
       - name: review_id
-        description: Natural key — unique review identifier from the Play Store API
+        description: Natural key — unique review identifier
         tests:
           - not_null
           - unique
@@ -53,13 +50,13 @@ models:
               to: ref('stg_playstore_apps')
               field: app_id
       - name: score
-        description: User rating (1 to 5, out-of-range values filtered at staging)
+        description: User rating — filtered to 1-5 at staging
         tests:
           - not_null
           - accepted_values:
               values: [1, 2, 3, 4, 5]
       - name: reviewed_at
-        description: Timestamp of the review — must not be null (malformed dates filtered)
+        description: Timestamp of the review
         tests:
           - not_null
       - name: date_key

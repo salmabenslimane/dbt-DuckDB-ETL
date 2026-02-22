@@ -37,9 +37,9 @@ models:
 
   - name: dim_apps
     description: >
-      App dimension. One row per unique app.
-      Surrogate key: md5(app_id).
-      Foreign keys: category_sk → dim_categories, developer_sk → dim_developers.
+      App dimension. One row per unique app (current state only).
+      Apps without a category are excluded.
+      Hierarchy: dim_apps → dim_categories, dim_apps → dim_developers.
     columns:
       - name: app_sk
         tests:
@@ -53,14 +53,12 @@ models:
         tests:
           - not_null
       - name: category_sk
-        description: FK to dim_categories — referential integrity test
         tests:
           - not_null
           - relationships:
               to: ref('dim_categories')
               field: category_sk
       - name: developer_sk
-        description: FK to dim_developers — referential integrity test
         tests:
           - not_null
           - relationships:
@@ -70,8 +68,7 @@ models:
   - name: dim_date
     description: >
       Conformed date dimension. One row per calendar day.
-      Date key format: YYYYMMDD integer (Kimball standard).
-      Range anchored to min/max review dates in stg_playstore_reviews.
+      Date key: YYYYMMDD integer (Kimball standard).
     columns:
       - name: date_key
         tests:
@@ -85,11 +82,11 @@ models:
   - name: dim_apps_scd
     description: >
       SCD Type 2 dimension for apps. Built from snap_apps snapshot.
-      One row per version of each app — historical rows preserved on attribute change.
+      One row per version of each app.
       is_current = true identifies the current open version (valid_to is null).
     columns:
       - name: app_version_sk
-        description: Surrogate key scoped to the specific version — md5(app_id || valid_from)
+        description: Surrogate key scoped to the app version — md5(app_id || valid_from)
         tests:
           - not_null
           - unique

@@ -1,9 +1,12 @@
--- models/staging/stg_playstore_reviews.sql
+
+  
+  create view "app_market"."main"."stg_playstore_reviews__dbt_tmp" as (
+    -- models/staging/stg_playstore_reviews.sql
 -- Fix: 'at' is a reserved keyword in DuckDB — must be quoted as "at"
 -- Fix: date_key uses strftime on the quoted column
 
 with raw as (
-    select * from {{ ref('src_playstore_reviews') }}
+    select * from "app_market"."main"."src_playstore_reviews"
 ),
 
 cleaned as (
@@ -24,3 +27,4 @@ cleaned as (
 )
 
 select * from cleaned
+  );

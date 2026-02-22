@@ -12,40 +12,50 @@ models:
         tests:
           - not_null
           - unique
+
       - name: app_sk
         description: FK to dim_apps
         tests:
           - not_null
           - relationships:
-              to: ref('dim_apps')
-              field: app_sk
+              arguments:
+                to: ref('dim_apps')
+                field: app_sk
+
       - name: developer_sk
         description: FK to dim_developers
         tests:
           - not_null
           - relationships:
-              to: ref('dim_developers')
-              field: developer_sk
+              arguments:
+                to: ref('dim_developers')
+                field: developer_sk
+
       - name: category_sk
         description: FK to dim_categories
         tests:
           - not_null
           - relationships:
-              to: ref('dim_categories')
-              field: category_sk
+              arguments:
+                to: ref('dim_categories')
+                field: category_sk
+
       - name: date_key
         description: FK to dim_date (YYYYMMDD integer)
         tests:
           - not_null
           - relationships:
-              to: ref('dim_date')
-              field: date_key
+              arguments:
+                to: ref('dim_date')
+                field: date_key
+
       - name: score
         description: User rating — must be between 1 and 5 (enforced at staging)
         tests:
           - not_null
           - accepted_values:
               values: [1, 2, 3, 4, 5]
+
       - name: thumbs_up_count
         description: Engagement count — must be non-negative
         tests:

@@ -5,18 +5,18 @@
 -- out of fact_reviews via the inner join on app_sk.
 
 with stg as (
-    select * from {{ ref('stg_playstore_apps') }}
+    select * from "app_market"."main"."stg_playstore_apps"
     where category_id is not null   -- exclude apps with no category
 ),
 
 categories as (
     select category_id, category_sk
-    from {{ ref('dim_categories') }}
+    from "app_market"."main"."dim_categories"
 ),
 
 developers as (
     select developer_id, developer_sk
-    from {{ ref('dim_developers') }}
+    from "app_market"."main"."dim_developers"
 )
 
 select
