@@ -11,9 +11,9 @@ with raw as (
 
 cleaned as (
     select
-        md5(reviewId)                                                       as review_sk,
-        reviewId                                                            as review_id,
-        appId                                                               as app_id,
+        md5(reviewId::varchar)                                              as review_sk,
+        reviewId::varchar                                                   as review_id,
+        appId::varchar                                                      as app_id,
         userName                                                            as user_name,
         try_cast(score as integer)                                          as score,
         coalesce(nullif(trim(content), ''), '')                             as content,
