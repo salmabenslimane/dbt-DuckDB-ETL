@@ -1,0 +1,104 @@
+version: 2
+
+models:
+  - name: dim_developers
+    description: >
+      Developer dimension. One row per unique developer.
+      Surrogate key: md5(developer_id).
+    columns:
+      - name: developer_sk
+        tests:
+          - not_null
+          - unique
+      - name: developer_id
+        tests:
+          - not_null
+          - unique
+      - name: developer_name
+        tests:
+          - not_null
+
+  - name: dim_categories
+    description: >
+      Category dimension. One row per unique Play Store category.
+      Surrogate key: md5(category_id).
+    columns:
+      - name: category_sk
+        tests:
+          - not_null
+          - unique
+      - name: category_id
+        tests:
+          - not_null
+          - unique
+      - name: category_name
+        tests:
+          - not_null
+
+  - name: dim_apps
+    description: >
+      App dimension. One row per unique app.
+      Surrogate key: md5(app_id).
+      Foreign keys: category_sk → dim_categories, developer_sk → dim_developers.
+    columns:
+      - name: app_sk
+        tests:
+          - not_null
+          - unique
+      - name: app_id
+        tests:
+          - not_null
+          - unique
+      - name: app_name
+        tests:
+          - not_null
+      - name: category_sk
+        description: FK to dim_categories — referential integrity test
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_categories')
+              field: category_sk
+      - name: developer_sk
+        description: FK to dim_developers — referential integrity test
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_developers')
+              field: developer_sk
+
+  - name: dim_date
+    description: >
+      Conformed date dimension. One row per calendar day.
+      Date key format: YYYYMMDD integer (Kimball standard).
+      Range anchored to min/max review dates in stg_playstore_reviews.
+    columns:
+      - name: date_key
+        tests:
+          - not_null
+          - unique
+      - name: calendar_date
+        tests:
+          - not_null
+          - unique
+
+  - name: dim_apps_scd
+    description: >
+      SCD Type 2 dimension for apps. Built from snap_apps snapshot.
+      One row per version of each app — historical rows preserved on attribute change.
+      is_current = true identifies the current open version (valid_to is null).
+    columns:
+      - name: app_version_sk
+        description: Surrogate key scoped to the specific version — md5(app_id || valid_from)
+        tests:
+          - not_null
+          - unique
+      - name: app_id
+        tests:
+          - not_null
+      - name: valid_from
+        tests:
+          - not_null
+      - name: is_current
+        tests:
+          - not_null
