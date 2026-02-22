@@ -10656,3 +10656,232 @@ from "app_market"."main"."stg_playstore_apps"
 [0m22:56:49.081704 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AF600F2DD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AF66111F10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AF66113B10>]}
 [0m22:56:49.084764 [debug] [MainThread]: Flushing usage events
 [0m22:56:51.422252 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:04:04.086298 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028DBA7199D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028DBA4AC810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028DBA719810>]}
+
+
+============================== 23:04:04.102206 | f5d93fd5-0c7a-4710-9fb4-d750d9f6124b ==============================
+[0m23:04:04.102206 [info ] [MainThread]: Running with dbt=1.11.6
+[0m23:04:04.104865 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\User\\Desktop\\dbt-DuckDB-ETL', 'use_colors': 'True', 'invocation_command': 'dbt debug', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\User\\Desktop\\dbt-DuckDB-ETL\\logs'}
+[0m23:04:04.143919 [info ] [MainThread]: dbt version: 1.11.6
+[0m23:04:04.150199 [info ] [MainThread]: python version: 3.11.9
+[0m23:04:04.150199 [info ] [MainThread]: python path: C:\Users\User\Desktop\dbt-DuckDB-ETL\venv\scripts\python.exe
+[0m23:04:04.153980 [info ] [MainThread]: os info: Windows-10-10.0.26200-SP0
+[0m23:04:04.388162 [info ] [MainThread]: Using profiles dir at C:\Users\User\Desktop\dbt-DuckDB-ETL
+[0m23:04:04.390008 [info ] [MainThread]: Using profiles.yml file at C:\Users\User\Desktop\dbt-DuckDB-ETL\profiles.yml
+[0m23:04:04.391219 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\User\Desktop\dbt-DuckDB-ETL\dbt_project.yml
+[0m23:04:04.396585 [info ] [MainThread]: adapter type: duckdb
+[0m23:04:04.398252 [info ] [MainThread]: adapter version: 1.10.1
+[0m23:04:04.657098 [info ] [MainThread]: Configuration:
+[0m23:04:04.657098 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m23:04:04.657098 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m23:04:04.663513 [info ] [MainThread]: Required dependencies:
+[0m23:04:04.663513 [debug] [MainThread]: Executing "git --help"
+[0m23:04:04.773390 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m23:04:04.774648 [debug] [MainThread]: STDERR: "b''"
+[0m23:04:04.777180 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m23:04:04.778809 [info ] [MainThread]: Connection:
+[0m23:04:04.778809 [info ] [MainThread]:   database: app_market
+[0m23:04:04.778809 [info ] [MainThread]:   schema: main
+[0m23:04:04.784304 [info ] [MainThread]:   path: data/db/app_market.duckdb
+[0m23:04:04.786834 [info ] [MainThread]:   config_options: None
+[0m23:04:04.788849 [info ] [MainThread]:   extensions: None
+[0m23:04:04.790866 [info ] [MainThread]:   settings: {}
+[0m23:04:04.792879 [info ] [MainThread]:   external_root: .
+[0m23:04:04.792879 [info ] [MainThread]:   use_credential_provider: None
+[0m23:04:04.794892 [info ] [MainThread]:   attach: None
+[0m23:04:04.796904 [info ] [MainThread]:   filesystems: None
+[0m23:04:04.798915 [info ] [MainThread]:   remote: None
+[0m23:04:04.800926 [info ] [MainThread]:   plugins: None
+[0m23:04:04.802938 [info ] [MainThread]:   disable_transactions: False
+[0m23:04:04.805453 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m23:04:05.466619 [debug] [MainThread]: Acquiring new duckdb connection 'debug'
+[0m23:04:05.627234 [debug] [MainThread]: Using duckdb connection "debug"
+[0m23:04:05.627234 [debug] [MainThread]: On debug: select 1 as id
+[0m23:04:05.627234 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m23:04:05.673291 [debug] [MainThread]: SQL status: OK in 0.042 seconds
+[0m23:04:05.673291 [debug] [MainThread]: On debug: Close
+[0m23:04:05.673291 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m23:04:05.673291 [info ] [MainThread]: [32mAll checks passed![0m
+[0m23:04:05.682761 [debug] [MainThread]: Command `dbt debug` succeeded at 23:04:05.682761 after 1.75 seconds
+[0m23:04:05.682761 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m23:04:05.682761 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028DB46E2DD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028DBA85CC90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028DBA713BD0>]}
+[0m23:04:05.682761 [debug] [MainThread]: Flushing usage events
+[0m23:04:07.055512 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:04:12.073078 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000232D5111DD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000232D5148390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000232D514A250>]}
+
+
+============================== 23:04:12.084981 | 42933cc5-d20c-4e7e-baa2-633e1e407f4e ==============================
+[0m23:04:12.084981 [info ] [MainThread]: Running with dbt=1.11.6
+[0m23:04:12.088698 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\User\\Desktop\\dbt-DuckDB-ETL', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt run', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\User\\Desktop\\dbt-DuckDB-ETL\\logs'}
+[0m23:04:12.678125 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '42933cc5-d20c-4e7e-baa2-633e1e407f4e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000232D51F1C50>]}
+[0m23:04:12.822717 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '42933cc5-d20c-4e7e-baa2-633e1e407f4e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000232D32DBE50>]}
+[0m23:04:12.832556 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m23:04:13.455835 [debug] [MainThread]: checksum: ec27062d18352e9cfca161c166fcc73d2201661a23a3cf3c89196a27f32cfcb8, vars: {}, profile: , target: , version: 1.11.6
+[0m23:04:13.789070 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 3 files changed.
+[0m23:04:13.789070 [debug] [MainThread]: Partial parsing: added file: app_market_research://models\marts\facts\fact_reviews_historical.sql
+[0m23:04:13.789070 [debug] [MainThread]: Partial parsing: updated file: app_market_research://models\marts\facts\fact_reviews.sql
+[0m23:04:13.789070 [debug] [MainThread]: Partial parsing: updated file: app_market_research://snapshots\dim_apps_scd.sql
+[0m23:04:13.789070 [debug] [MainThread]: Partial parsing: updated file: app_market_research://snapshots\snap_apps.sql
+[0m23:04:14.713014 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.app_market_research.fact_reviews_historical' (models\marts\facts\fact_reviews_historical.sql) depends on a node named 'dim_apps_scd' which was not found
+[0m23:04:14.713014 [debug] [MainThread]: Command `dbt run` failed at 23:04:14.713014 after 2.84 seconds
+[0m23:04:14.713014 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000232D59E1110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000232CEEF4A90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000232CEEF4B50>]}
+[0m23:04:14.713014 [debug] [MainThread]: Flushing usage events
+[0m23:04:16.273744 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:04:23.441454 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021964A19D50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021964A19C10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021964A19990>]}
+
+
+============================== 23:04:23.451978 | 65ddb1b2-20f3-4b90-8b94-a50ec8d49e43 ==============================
+[0m23:04:23.451978 [info ] [MainThread]: Running with dbt=1.11.6
+[0m23:04:23.455619 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\User\\Desktop\\dbt-DuckDB-ETL', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt snapshot', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\User\\Desktop\\dbt-DuckDB-ETL\\logs'}
+[0m23:04:24.356567 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '65ddb1b2-20f3-4b90-8b94-a50ec8d49e43', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021962B36010>]}
+[0m23:04:24.644668 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '65ddb1b2-20f3-4b90-8b94-a50ec8d49e43', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002195F5C5A50>]}
+[0m23:04:24.652929 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m23:04:26.243048 [debug] [MainThread]: checksum: ec27062d18352e9cfca161c166fcc73d2201661a23a3cf3c89196a27f32cfcb8, vars: {}, profile: , target: , version: 1.11.6
+[0m23:04:27.098399 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 3 files changed.
+[0m23:04:27.098399 [debug] [MainThread]: Partial parsing: added file: app_market_research://models\marts\facts\fact_reviews_historical.sql
+[0m23:04:27.101533 [debug] [MainThread]: Partial parsing: updated file: app_market_research://snapshots\snap_apps.sql
+[0m23:04:27.104521 [debug] [MainThread]: Partial parsing: updated file: app_market_research://models\marts\facts\fact_reviews.sql
+[0m23:04:27.106535 [debug] [MainThread]: Partial parsing: updated file: app_market_research://snapshots\dim_apps_scd.sql
+[0m23:04:28.398596 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.app_market_research.fact_reviews_historical' (models\marts\facts\fact_reviews_historical.sql) depends on a node named 'dim_apps_scd' which was not found
+[0m23:04:28.404327 [debug] [MainThread]: Command `dbt snapshot` failed at 23:04:28.404327 after 5.24 seconds
+[0m23:04:28.406820 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021964A236D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002195E824A90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002195E824B50>]}
+[0m23:04:28.410049 [debug] [MainThread]: Flushing usage events
+[0m23:04:29.911250 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:04:37.122424 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002357EF1AF90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002357ECAC590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002357EF49110>]}
+
+
+============================== 23:04:37.129551 | 1728d63a-9291-4ed8-91de-da1b8b76a2a3 ==============================
+[0m23:04:37.129551 [info ] [MainThread]: Running with dbt=1.11.6
+[0m23:04:37.129551 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\User\\Desktop\\dbt-DuckDB-ETL', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt run --select dim_apps_scd fact_reviews_historical', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\User\\Desktop\\dbt-DuckDB-ETL\\logs'}
+[0m23:04:37.542949 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '1728d63a-9291-4ed8-91de-da1b8b76a2a3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023500144910>]}
+[0m23:04:37.638238 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '1728d63a-9291-4ed8-91de-da1b8b76a2a3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002357AAC4B50>]}
+[0m23:04:37.654315 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m23:04:38.259996 [debug] [MainThread]: checksum: ec27062d18352e9cfca161c166fcc73d2201661a23a3cf3c89196a27f32cfcb8, vars: {}, profile: , target: , version: 1.11.6
+[0m23:04:38.534060 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 3 files changed.
+[0m23:04:38.545125 [debug] [MainThread]: Partial parsing: added file: app_market_research://models\marts\facts\fact_reviews_historical.sql
+[0m23:04:38.545125 [debug] [MainThread]: Partial parsing: updated file: app_market_research://snapshots\dim_apps_scd.sql
+[0m23:04:38.545125 [debug] [MainThread]: Partial parsing: updated file: app_market_research://snapshots\snap_apps.sql
+[0m23:04:38.545125 [debug] [MainThread]: Partial parsing: updated file: app_market_research://models\marts\facts\fact_reviews.sql
+[0m23:04:39.448371 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.app_market_research.fact_reviews_historical' (models\marts\facts\fact_reviews_historical.sql) depends on a node named 'dim_apps_scd' which was not found
+[0m23:04:39.451167 [debug] [MainThread]: Command `dbt run` failed at 23:04:39.451167 after 2.52 seconds
+[0m23:04:39.451167 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002357EF13C10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023579CF5110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002350082F990>]}
+[0m23:04:39.451167 [debug] [MainThread]: Flushing usage events
+[0m23:04:40.750382 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:04:45.101871 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001902580ED50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019025840F10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000190258730D0>]}
+
+
+============================== 23:04:45.109916 | af9a42f2-5e5c-468d-89e4-bb676c2767ad ==============================
+[0m23:04:45.109916 [info ] [MainThread]: Running with dbt=1.11.6
+[0m23:04:45.111925 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\User\\Desktop\\dbt-DuckDB-ETL', 'use_colors': 'True', 'invocation_command': 'dbt test', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\User\\Desktop\\dbt-DuckDB-ETL\\logs'}
+[0m23:04:45.607817 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'af9a42f2-5e5c-468d-89e4-bb676c2767ad', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019025AD8C90>]}
+[0m23:04:45.723012 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'af9a42f2-5e5c-468d-89e4-bb676c2767ad', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001902391B950>]}
+[0m23:04:45.729200 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m23:04:46.462394 [debug] [MainThread]: checksum: ec27062d18352e9cfca161c166fcc73d2201661a23a3cf3c89196a27f32cfcb8, vars: {}, profile: , target: , version: 1.11.6
+[0m23:04:46.831830 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 3 files changed.
+[0m23:04:46.834061 [debug] [MainThread]: Partial parsing: added file: app_market_research://models\marts\facts\fact_reviews_historical.sql
+[0m23:04:46.834061 [debug] [MainThread]: Partial parsing: updated file: app_market_research://snapshots\dim_apps_scd.sql
+[0m23:04:46.834061 [debug] [MainThread]: Partial parsing: updated file: app_market_research://snapshots\snap_apps.sql
+[0m23:04:46.834061 [debug] [MainThread]: Partial parsing: updated file: app_market_research://models\marts\facts\fact_reviews.sql
+[0m23:04:47.839732 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.app_market_research.fact_reviews_historical' (models\marts\facts\fact_reviews_historical.sql) depends on a node named 'dim_apps_scd' which was not found
+[0m23:04:47.839732 [debug] [MainThread]: Command `dbt test` failed at 23:04:47.839732 after 2.92 seconds
+[0m23:04:47.848831 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001902587AB50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001902587A090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000190270CB410>]}
+[0m23:04:47.848831 [debug] [MainThread]: Flushing usage events
+[0m23:04:49.044233 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:04:55.414182 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029BBF31A390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029BBF0ACDD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029BBF31A750>]}
+
+
+============================== 23:04:55.422156 | 119e7deb-018a-4821-983e-820c3edb368c ==============================
+[0m23:04:55.422156 [info ] [MainThread]: Running with dbt=1.11.6
+[0m23:04:55.422156 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\User\\Desktop\\dbt-DuckDB-ETL', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt run --select fact_reviews fact_reviews_historical', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\User\\Desktop\\dbt-DuckDB-ETL\\logs'}
+[0m23:04:56.034155 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '119e7deb-018a-4821-983e-820c3edb368c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029BBF3D4E90>]}
+[0m23:04:56.178777 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '119e7deb-018a-4821-983e-820c3edb368c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029BBD4DFFD0>]}
+[0m23:04:56.181452 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m23:04:56.923034 [debug] [MainThread]: checksum: ec27062d18352e9cfca161c166fcc73d2201661a23a3cf3c89196a27f32cfcb8, vars: {}, profile: , target: , version: 1.11.6
+[0m23:04:57.292414 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 3 files changed.
+[0m23:04:57.292414 [debug] [MainThread]: Partial parsing: added file: app_market_research://models\marts\facts\fact_reviews_historical.sql
+[0m23:04:57.292414 [debug] [MainThread]: Partial parsing: updated file: app_market_research://snapshots\snap_apps.sql
+[0m23:04:57.292414 [debug] [MainThread]: Partial parsing: updated file: app_market_research://snapshots\dim_apps_scd.sql
+[0m23:04:57.303483 [debug] [MainThread]: Partial parsing: updated file: app_market_research://models\marts\facts\fact_reviews.sql
+[0m23:04:58.289055 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.app_market_research.fact_reviews_historical' (models\marts\facts\fact_reviews_historical.sql) depends on a node named 'dim_apps_scd' which was not found
+[0m23:04:58.302331 [debug] [MainThread]: Command `dbt run` failed at 23:04:58.302331 after 3.13 seconds
+[0m23:04:58.302331 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029BBF382190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029BBDCA1F50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029BB90F5110>]}
+[0m23:04:58.302331 [debug] [MainThread]: Flushing usage events
+[0m23:04:59.696809 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:05:04.775938 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017A89419A90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017A89419B50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017A89449D90>]}
+
+
+============================== 23:05:04.790877 | 50189083-0d10-4b14-9469-3ccaef18d234 ==============================
+[0m23:05:04.790877 [info ] [MainThread]: Running with dbt=1.11.6
+[0m23:05:04.795908 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\User\\Desktop\\dbt-DuckDB-ETL', 'invocation_command': 'dbt run --select stg_playstore_apps', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\User\\Desktop\\dbt-DuckDB-ETL\\logs'}
+[0m23:05:05.288324 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '50189083-0d10-4b14-9469-3ccaef18d234', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017A894DE590>]}
+[0m23:05:05.440803 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '50189083-0d10-4b14-9469-3ccaef18d234', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017A83F05C10>]}
+[0m23:05:05.445566 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m23:05:06.072133 [debug] [MainThread]: checksum: ec27062d18352e9cfca161c166fcc73d2201661a23a3cf3c89196a27f32cfcb8, vars: {}, profile: , target: , version: 1.11.6
+[0m23:05:06.352711 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 3 files changed.
+[0m23:05:06.352711 [debug] [MainThread]: Partial parsing: added file: app_market_research://models\marts\facts\fact_reviews_historical.sql
+[0m23:05:06.352711 [debug] [MainThread]: Partial parsing: updated file: app_market_research://snapshots\dim_apps_scd.sql
+[0m23:05:06.352711 [debug] [MainThread]: Partial parsing: updated file: app_market_research://snapshots\snap_apps.sql
+[0m23:05:06.359266 [debug] [MainThread]: Partial parsing: updated file: app_market_research://models\marts\facts\fact_reviews.sql
+[0m23:05:07.081380 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.app_market_research.fact_reviews_historical' (models\marts\facts\fact_reviews_historical.sql) depends on a node named 'dim_apps_scd' which was not found
+[0m23:05:07.083269 [debug] [MainThread]: Command `dbt run` failed at 23:05:07.083269 after 2.48 seconds
+[0m23:05:07.083269 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017A89411890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017A89413A10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017A89CBFF50>]}
+[0m23:05:07.083269 [debug] [MainThread]: Flushing usage events
+[0m23:05:08.835961 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:05:15.789187 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028A74D19D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028A74D41790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028A6FF06910>]}
+
+
+============================== 23:05:15.805575 | 526a1fc4-e12a-4ca5-bc6f-467a0c66d224 ==============================
+[0m23:05:15.805575 [info ] [MainThread]: Running with dbt=1.11.6
+[0m23:05:15.808796 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\User\\Desktop\\dbt-DuckDB-ETL', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt snapshot', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\User\\Desktop\\dbt-DuckDB-ETL\\logs'}
+[0m23:05:16.715739 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '526a1fc4-e12a-4ca5-bc6f-467a0c66d224', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028A74D228D0>]}
+[0m23:05:16.987882 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '526a1fc4-e12a-4ca5-bc6f-467a0c66d224', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028A6F835750>]}
+[0m23:05:16.997092 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m23:05:18.381905 [debug] [MainThread]: checksum: ec27062d18352e9cfca161c166fcc73d2201661a23a3cf3c89196a27f32cfcb8, vars: {}, profile: , target: , version: 1.11.6
+[0m23:05:18.973453 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 3 files changed.
+[0m23:05:18.974678 [debug] [MainThread]: Partial parsing: added file: app_market_research://models\marts\facts\fact_reviews_historical.sql
+[0m23:05:18.976700 [debug] [MainThread]: Partial parsing: updated file: app_market_research://snapshots\dim_apps_scd.sql
+[0m23:05:18.978457 [debug] [MainThread]: Partial parsing: updated file: app_market_research://models\marts\facts\fact_reviews.sql
+[0m23:05:18.980482 [debug] [MainThread]: Partial parsing: updated file: app_market_research://snapshots\snap_apps.sql
+[0m23:05:20.382264 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.app_market_research.fact_reviews_historical' (models\marts\facts\fact_reviews_historical.sql) depends on a node named 'dim_apps_scd' which was not found
+[0m23:05:20.388709 [debug] [MainThread]: Command `dbt snapshot` failed at 23:05:20.387693 after 4.98 seconds
+[0m23:05:20.400903 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028A74D0D910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028A74D0F990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028A765D10D0>]}
+[0m23:05:20.402785 [debug] [MainThread]: Flushing usage events
+[0m23:05:22.041569 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:05:29.674916 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ED9D57A290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ED9D2ACC90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ED9D50EF10>]}
+
+
+============================== 23:05:29.689208 | 9db73f47-6933-453e-aaee-1432064acf4c ==============================
+[0m23:05:29.689208 [info ] [MainThread]: Running with dbt=1.11.6
+[0m23:05:29.694334 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\User\\Desktop\\dbt-DuckDB-ETL', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt run --select dim_apps_scd', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\User\\Desktop\\dbt-DuckDB-ETL\\logs'}
+[0m23:05:30.653085 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '9db73f47-6933-453e-aaee-1432064acf4c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ED9D5CDB10>]}
+[0m23:05:30.876563 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '9db73f47-6933-453e-aaee-1432064acf4c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ED99095B50>]}
+[0m23:05:30.886630 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m23:05:31.888099 [debug] [MainThread]: checksum: ec27062d18352e9cfca161c166fcc73d2201661a23a3cf3c89196a27f32cfcb8, vars: {}, profile: , target: , version: 1.11.6
+[0m23:05:32.353385 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 3 files changed.
+[0m23:05:32.353385 [debug] [MainThread]: Partial parsing: added file: app_market_research://models\marts\facts\fact_reviews_historical.sql
+[0m23:05:32.363122 [debug] [MainThread]: Partial parsing: updated file: app_market_research://snapshots\snap_apps.sql
+[0m23:05:32.364357 [debug] [MainThread]: Partial parsing: updated file: app_market_research://snapshots\dim_apps_scd.sql
+[0m23:05:32.365577 [debug] [MainThread]: Partial parsing: updated file: app_market_research://models\marts\facts\fact_reviews.sql
+[0m23:05:33.489125 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.app_market_research.fact_reviews_historical' (models\marts\facts\fact_reviews_historical.sql) depends on a node named 'dim_apps_scd' which was not found
+[0m23:05:33.489125 [debug] [MainThread]: Command `dbt run` failed at 23:05:33.489125 after 4.00 seconds
+[0m23:05:33.489125 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ED9D580450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ED9D5203D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ED974A2F90>]}
+[0m23:05:33.489125 [debug] [MainThread]: Flushing usage events
+[0m23:05:35.129971 [debug] [MainThread]: An error was encountered while trying to flush usage events
