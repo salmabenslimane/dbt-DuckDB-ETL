@@ -1,0 +1,54 @@
+version: 2
+
+models:
+  - name: fact_reviews
+    description: >
+      Central fact table for app reviews.
+      Grain: one row per review event for one app at a given point in time.
+      All dimension keys are validated via inner joins — no orphan foreign keys.
+    columns:
+      - name: review_sk
+        description: Surrogate key of the fact row — md5(review_id)
+        tests:
+          - not_null
+          - unique
+      - name: app_sk
+        description: FK to dim_apps
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_apps')
+              field: app_sk
+      - name: developer_sk
+        description: FK to dim_developers
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_developers')
+              field: developer_sk
+      - name: category_sk
+        description: FK to dim_categories
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_categories')
+              field: category_sk
+      - name: date_key
+        description: FK to dim_date (YYYYMMDD integer)
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_date')
+              field: date_key
+      - name: score
+        description: User rating — must be between 1 and 5 (enforced at staging)
+        tests:
+          - not_null
+          - accepted_values:
+              values: [1, 2, 3, 4, 5]
+      - name: thumbs_up_count
+        description: Engagement count — must be non-negative
+        tests:
+          - not_null
+          - dbt_utils.accepted_range:
+              min_value: 0
