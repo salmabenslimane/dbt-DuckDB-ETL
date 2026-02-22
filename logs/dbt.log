@@ -10365,3 +10365,294 @@ having count(*) > 1
 [0m22:54:20.990495 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D7CAEF2DD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D7CACF4ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D7CACF4950>]}
 [0m22:54:20.991009 [debug] [MainThread]: Flushing usage events
 [0m22:54:22.909807 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:56:42.534792 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AF66119090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AF66111C90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AF66141850>]}
+
+
+============================== 22:56:42.552976 | 3ae795b6-1f12-4ec9-a5dd-37d9d4c00758 ==============================
+[0m22:56:42.552976 [info ] [MainThread]: Running with dbt=1.11.6
+[0m22:56:42.556733 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\User\\Desktop\\dbt-DuckDB-ETL', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt snapshot', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\User\\Desktop\\dbt-DuckDB-ETL\\logs'}
+[0m22:56:43.884034 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '3ae795b6-1f12-4ec9-a5dd-37d9d4c00758', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AF66112590>]}
+[0m22:56:44.396464 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '3ae795b6-1f12-4ec9-a5dd-37d9d4c00758', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AF60CC5990>]}
+[0m22:56:44.402510 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m22:56:45.995441 [debug] [MainThread]: checksum: ec27062d18352e9cfca161c166fcc73d2201661a23a3cf3c89196a27f32cfcb8, vars: {}, profile: , target: , version: 1.11.6
+[0m22:56:46.664693 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m22:56:46.666646 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m22:56:46.666646 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m22:56:46.903203 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '3ae795b6-1f12-4ec9-a5dd-37d9d4c00758', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AF6658FE50>]}
+[0m22:56:47.488864 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\User\Desktop\dbt-DuckDB-ETL\target\manifest.json
+[0m22:56:47.496991 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\User\Desktop\dbt-DuckDB-ETL\target\semantic_manifest.json
+[0m22:56:47.587770 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '3ae795b6-1f12-4ec9-a5dd-37d9d4c00758', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AF6698A590>]}
+[0m22:56:47.591498 [info ] [MainThread]: Found 10 models, 1 snapshot, 40 data tests, 474 macros
+[0m22:56:47.593817 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3ae795b6-1f12-4ec9-a5dd-37d9d4c00758', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AF6662FA10>]}
+[0m22:56:47.604232 [info ] [MainThread]: 
+[0m22:56:47.604232 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m22:56:47.610347 [info ] [MainThread]: 
+[0m22:56:47.613365 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m22:56:47.615382 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_app_market'
+[0m22:56:47.984997 [debug] [ThreadPool]: Using duckdb connection "list_app_market"
+[0m22:56:47.984997 [debug] [ThreadPool]: On list_app_market: /* {"app": "dbt", "dbt_version": "1.11.6", "profile_name": "app_market_research", "target_name": "dev", "connection_name": "list_app_market"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"app_market"'
+    
+  
+  
+[0m22:56:47.989261 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:56:48.058949 [debug] [ThreadPool]: SQL status: OK in 0.073 seconds
+[0m22:56:48.063683 [debug] [ThreadPool]: On list_app_market: Close
+[0m22:56:48.063683 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_app_market, now create_app_market_snapshots)
+[0m22:56:48.063683 [debug] [ThreadPool]: Creating schema "database: "app_market"
+schema: "snapshots"
+"
+[0m22:56:48.080224 [debug] [ThreadPool]: Using duckdb connection "create_app_market_snapshots"
+[0m22:56:48.088342 [debug] [ThreadPool]: On create_app_market_snapshots: /* {"app": "dbt", "dbt_version": "1.11.6", "profile_name": "app_market_research", "target_name": "dev", "connection_name": "create_app_market_snapshots"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='app_market'
+        and type='sqlite'
+    
+  
+[0m22:56:48.091509 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m22:56:48.092428 [debug] [ThreadPool]: SQL status: OK in 0.003 seconds
+[0m22:56:48.096555 [debug] [ThreadPool]: Using duckdb connection "create_app_market_snapshots"
+[0m22:56:48.096555 [debug] [ThreadPool]: On create_app_market_snapshots: BEGIN
+[0m22:56:48.096555 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m22:56:48.096555 [debug] [ThreadPool]: Using duckdb connection "create_app_market_snapshots"
+[0m22:56:48.104706 [debug] [ThreadPool]: On create_app_market_snapshots: /* {"app": "dbt", "dbt_version": "1.11.6", "profile_name": "app_market_research", "target_name": "dev", "connection_name": "create_app_market_snapshots"} */
+
+    
+    
+        create schema if not exists "app_market"."snapshots"
+    
+[0m22:56:48.104706 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m22:56:48.104706 [debug] [ThreadPool]: On create_app_market_snapshots: COMMIT
+[0m22:56:48.104706 [debug] [ThreadPool]: Using duckdb connection "create_app_market_snapshots"
+[0m22:56:48.113109 [debug] [ThreadPool]: On create_app_market_snapshots: COMMIT
+[0m22:56:48.130448 [debug] [ThreadPool]: SQL status: OK in 0.017 seconds
+[0m22:56:48.130448 [debug] [ThreadPool]: On create_app_market_snapshots: Close
+[0m22:56:48.147473 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_app_market_main'
+[0m22:56:48.147473 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_app_market_snapshots'
+[0m22:56:48.175825 [debug] [ThreadPool]: Using duckdb connection "list_app_market_main"
+[0m22:56:48.180060 [debug] [ThreadPool]: Using duckdb connection "list_app_market_snapshots"
+[0m22:56:48.180060 [debug] [ThreadPool]: On list_app_market_main: BEGIN
+[0m22:56:48.180060 [debug] [ThreadPool]: On list_app_market_snapshots: BEGIN
+[0m22:56:48.189405 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:56:48.189405 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:56:48.192156 [debug] [ThreadPool]: SQL status: OK in 0.005 seconds
+[0m22:56:48.192156 [debug] [ThreadPool]: SQL status: OK in 0.006 seconds
+[0m22:56:48.196671 [debug] [ThreadPool]: Using duckdb connection "list_app_market_main"
+[0m22:56:48.196671 [debug] [ThreadPool]: Using duckdb connection "list_app_market_snapshots"
+[0m22:56:48.201096 [debug] [ThreadPool]: On list_app_market_main: /* {"app": "dbt", "dbt_version": "1.11.6", "profile_name": "app_market_research", "target_name": "dev", "connection_name": "list_app_market_main"} */
+select
+      'app_market' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'app_market'
+  
+[0m22:56:48.201096 [debug] [ThreadPool]: On list_app_market_snapshots: /* {"app": "dbt", "dbt_version": "1.11.6", "profile_name": "app_market_research", "target_name": "dev", "connection_name": "list_app_market_snapshots"} */
+select
+      'app_market' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'snapshots'
+    and lower(table_catalog) = 'app_market'
+  
+[0m22:56:48.269477 [debug] [ThreadPool]: SQL status: OK in 0.063 seconds
+[0m22:56:48.269477 [debug] [ThreadPool]: SQL status: OK in 0.066 seconds
+[0m22:56:48.276774 [debug] [ThreadPool]: On list_app_market_snapshots: ROLLBACK
+[0m22:56:48.278400 [debug] [ThreadPool]: On list_app_market_main: ROLLBACK
+[0m22:56:48.278400 [debug] [ThreadPool]: Failed to rollback 'list_app_market_snapshots'
+[0m22:56:48.286064 [debug] [ThreadPool]: On list_app_market_snapshots: Close
+[0m22:56:48.286064 [debug] [ThreadPool]: Failed to rollback 'list_app_market_main'
+[0m22:56:48.286064 [debug] [ThreadPool]: On list_app_market_main: Close
+[0m22:56:48.294287 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3ae795b6-1f12-4ec9-a5dd-37d9d4c00758', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AF668D5650>]}
+[0m22:56:48.294287 [debug] [MainThread]: Using duckdb connection "master"
+[0m22:56:48.294287 [debug] [MainThread]: On master: BEGIN
+[0m22:56:48.302501 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:56:48.302501 [debug] [MainThread]: SQL status: OK in 0.003 seconds
+[0m22:56:48.308914 [debug] [MainThread]: On master: COMMIT
+[0m22:56:48.310823 [debug] [MainThread]: Using duckdb connection "master"
+[0m22:56:48.310823 [debug] [MainThread]: On master: COMMIT
+[0m22:56:48.310823 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m22:56:48.310823 [debug] [MainThread]: On master: Close
+[0m22:56:48.325846 [debug] [Thread-1 (]: Began running node snapshot.app_market_research.snap_apps
+[0m22:56:48.327417 [info ] [Thread-1 (]: 1 of 1 START snapshot snapshots.snap_apps ...................................... [RUN]
+[0m22:56:48.327417 [debug] [Thread-1 (]: Acquiring new duckdb connection 'snapshot.app_market_research.snap_apps'
+[0m22:56:48.327417 [debug] [Thread-1 (]: Began compiling node snapshot.app_market_research.snap_apps
+[0m22:56:48.360574 [debug] [Thread-1 (]: Began executing node snapshot.app_market_research.snap_apps
+[0m22:56:48.609008 [debug] [Thread-1 (]: Using duckdb connection "snapshot.app_market_research.snap_apps"
+[0m22:56:48.612016 [debug] [Thread-1 (]: On snapshot.app_market_research.snap_apps: /* {"app": "dbt", "dbt_version": "1.11.6", "profile_name": "app_market_research", "target_name": "dev", "node_id": "snapshot.app_market_research.snap_apps"} */
+DESCRIBE (select * from (
+        
+    
+
+    select *,
+        md5(coalesce(cast(app_id as varchar ), '')
+         || '|' || coalesce(cast(now()::timestamp as varchar ), '')
+        ) as dbt_scd_id,
+        now()::timestamp as dbt_updated_at,
+        now()::timestamp as dbt_valid_from,
+        
+  
+  coalesce(nullif(now()::timestamp, now()::timestamp), null)
+  as dbt_valid_to
+from (
+        
+
+
+
+select
+    app_id,
+    app_name,
+    developer_id,
+    developer_name,
+    developer_email,
+    developer_website,
+    category_id,
+    category_name,
+    genre,
+    score,
+    ratings_count,
+    installs,
+    price,
+    is_free,
+    content_rating,
+    released_at,
+    updated_at
+from "app_market"."main"."stg_playstore_apps"
+
+    ) sbq
+
+
+
+    ) as __dbt_sbq
+    where false
+    limit 0
+)
+[0m22:56:48.613631 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m22:56:48.662450 [debug] [Thread-1 (]: SQL status: OK in 0.050 seconds
+[0m22:56:48.680572 [debug] [Thread-1 (]: Using duckdb connection "snapshot.app_market_research.snap_apps"
+[0m22:56:48.682332 [debug] [Thread-1 (]: On snapshot.app_market_research.snap_apps: /* {"app": "dbt", "dbt_version": "1.11.6", "profile_name": "app_market_research", "target_name": "dev", "node_id": "snapshot.app_market_research.snap_apps"} */
+DESCRIBE (select * from (
+        select now()::timestamp as dbt_snapshot_time
+    ) as __dbt_sbq
+    where false
+    limit 0
+)
+[0m22:56:48.686362 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m22:56:48.691426 [debug] [Thread-1 (]: Writing runtime sql for node "snapshot.app_market_research.snap_apps"
+[0m22:56:48.697405 [debug] [Thread-1 (]: Using duckdb connection "snapshot.app_market_research.snap_apps"
+[0m22:56:48.697922 [debug] [Thread-1 (]: On snapshot.app_market_research.snap_apps: BEGIN
+[0m22:56:48.702062 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m22:56:48.705415 [debug] [Thread-1 (]: Using duckdb connection "snapshot.app_market_research.snap_apps"
+[0m22:56:48.708037 [debug] [Thread-1 (]: On snapshot.app_market_research.snap_apps: /* {"app": "dbt", "dbt_version": "1.11.6", "profile_name": "app_market_research", "target_name": "dev", "node_id": "snapshot.app_market_research.snap_apps"} */
+
+      
+  
+    
+    
+
+    create  table
+      "app_market"."snapshots"."snap_apps"
+  
+    as (
+      
+    
+
+    select *,
+        md5(coalesce(cast(app_id as varchar ), '')
+         || '|' || coalesce(cast(now()::timestamp as varchar ), '')
+        ) as dbt_scd_id,
+        now()::timestamp as dbt_updated_at,
+        now()::timestamp as dbt_valid_from,
+        
+  
+  coalesce(nullif(now()::timestamp, now()::timestamp), null)
+  as dbt_valid_to
+from (
+        
+
+
+
+select
+    app_id,
+    app_name,
+    developer_id,
+    developer_name,
+    developer_email,
+    developer_website,
+    category_id,
+    category_name,
+    genre,
+    score,
+    ratings_count,
+    installs,
+    price,
+    is_free,
+    content_rating,
+    released_at,
+    updated_at
+from "app_market"."main"."stg_playstore_apps"
+
+    ) sbq
+
+
+
+    );
+  
+  
+  
+[0m22:56:48.755253 [debug] [Thread-1 (]: SQL status: OK in 0.046 seconds
+[0m22:56:48.796773 [debug] [Thread-1 (]: On snapshot.app_market_research.snap_apps: COMMIT
+[0m22:56:48.804855 [debug] [Thread-1 (]: Using duckdb connection "snapshot.app_market_research.snap_apps"
+[0m22:56:48.808444 [debug] [Thread-1 (]: On snapshot.app_market_research.snap_apps: COMMIT
+[0m22:56:48.812918 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m22:56:48.818983 [debug] [Thread-1 (]: On snapshot.app_market_research.snap_apps: Close
+[0m22:56:48.825190 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3ae795b6-1f12-4ec9-a5dd-37d9d4c00758', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AF66D7FC50>]}
+[0m22:56:48.829159 [info ] [Thread-1 (]: 1 of 1 OK snapshotted snapshots.snap_apps ...................................... [[32mOK[0m in 0.49s]
+[0m22:56:48.829159 [debug] [Thread-1 (]: Finished running node snapshot.app_market_research.snap_apps
+[0m22:56:48.829159 [debug] [MainThread]: Using duckdb connection "master"
+[0m22:56:48.837277 [debug] [MainThread]: On master: BEGIN
+[0m22:56:48.837277 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m22:56:48.841928 [debug] [MainThread]: SQL status: OK in 0.003 seconds
+[0m22:56:48.841928 [debug] [MainThread]: On master: COMMIT
+[0m22:56:48.845659 [debug] [MainThread]: Using duckdb connection "master"
+[0m22:56:48.845659 [debug] [MainThread]: On master: COMMIT
+[0m22:56:48.845659 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m22:56:48.845659 [debug] [MainThread]: On master: Close
+[0m22:56:48.854050 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m22:56:48.856108 [debug] [MainThread]: Connection 'create_app_market_snapshots' was properly closed.
+[0m22:56:48.858123 [debug] [MainThread]: Connection 'list_app_market_main' was properly closed.
+[0m22:56:48.859153 [debug] [MainThread]: Connection 'list_app_market_snapshots' was properly closed.
+[0m22:56:48.862472 [debug] [MainThread]: Connection 'snapshot.app_market_research.snap_apps' was properly closed.
+[0m22:56:48.862472 [info ] [MainThread]: 
+[0m22:56:48.862472 [info ] [MainThread]: Finished running 1 snapshot in 0 hours 0 minutes and 1.25 seconds (1.25s).
+[0m22:56:48.870671 [debug] [MainThread]: Command end result
+[0m22:56:49.027771 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\User\Desktop\dbt-DuckDB-ETL\target\manifest.json
+[0m22:56:49.044102 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\User\Desktop\dbt-DuckDB-ETL\target\semantic_manifest.json
+[0m22:56:49.059803 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\User\Desktop\dbt-DuckDB-ETL\target\run_results.json
+[0m22:56:49.069232 [info ] [MainThread]: 
+[0m22:56:49.069232 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m22:56:49.069232 [info ] [MainThread]: 
+[0m22:56:49.076409 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m22:56:49.079687 [debug] [MainThread]: Command `dbt snapshot` succeeded at 22:56:49.079687 after 6.92 seconds
+[0m22:56:49.081704 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AF600F2DD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AF66111F10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AF66113B10>]}
+[0m22:56:49.084764 [debug] [MainThread]: Flushing usage events
+[0m22:56:51.422252 [debug] [MainThread]: An error was encountered while trying to flush usage events

@@ -18,8 +18,6 @@
 with reviews as (
     select * from {{ ref('stg_playstore_reviews') }}
 
-    -- Incremental filter: on subsequent runs, only process reviews
-    -- more recent than the latest already loaded into the fact table
     {% if is_incremental() %}
         where reviewed_at > (select max(reviewed_at) from {{ this }})
     {% endif %}

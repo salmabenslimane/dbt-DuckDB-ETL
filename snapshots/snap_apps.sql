@@ -1,12 +1,16 @@
 -- snapshots/snap_apps.sql
 -- Purpose: capture historical changes in app attributes using dbt snapshots (SCD Type 2).
--- Strategy: CHECK — dbt compares check_cols on every run and records a new version
+-- Strategy: CHECK — dbt compares check_cols on every run and creates a new version
 --   of the row whenever any tracked column changes.
 -- dbt automatically adds: dbt_scd_id, dbt_updated_at, dbt_valid_from, dbt_valid_to.
--- dbt_valid_to = NULL means the row is the current version.
+-- dbt_valid_to = NULL means the row is the current (open) version.
 --
--- Run with: dbt snapshot
--- Then verify: SELECT * FROM snapshots.snap_apps ORDER BY app_id, dbt_valid_from;
+-- To simulate a change for testing:
+--   1. Edit apps_metadata.json — change a category or app name
+--   2. Run: dbt run --select stg_playstore_apps
+--   3. Run: dbt snapshot
+--   4. Query snap_apps: you should see two rows for that app_id,
+--      one with dbt_valid_to set (closed) and one with dbt_valid_to null (open)
 
 {% snapshot snap_apps %}
 
