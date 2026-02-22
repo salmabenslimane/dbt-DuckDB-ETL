@@ -1,0 +1,7 @@
+app_market_research:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: "data/db/app_market.duckdb"  # path relative to dbt project root
+      threads: 4
